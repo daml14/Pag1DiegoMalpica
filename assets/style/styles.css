@@ -1,0 +1,224 @@
+:root{
+    --primero:#FAF0D7;
+    --segundo:#EAC696;
+    --tercero:#C8AE7D;
+    --cuarto: #765827;
+    --quinto: #65451F;
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal:'Krub', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    }
+    
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+    
+    /** Globales **/
+    body {
+    background-color: var(--primero);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    }
+    p {
+    font-size: 1.8rem;
+    font-family: 'Krub', sans-serif;
+    color: var(--negro);
+    }
+    a {
+    text-decoration: none;
+    }
+    img {
+    width: 100%;
+    }
+    .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    }
+    h1, h2, h3 {
+    text-align: center;
+    color: var(--quinto);
+    font-family: var(--fuentePrincipal);
+    }
+    h1 {font-size: 4rem;}
+    h2 {font-size: 3.2rem;}
+    h3 {font-size: 2.4rem;}
+    /** Header **/
+    .header__texto{
+        color: var(--primero);
+        background-color: var(--quinto);
+    }
+  
+    /** Navegacion **/
+.navegacion {
+    background-color: var(--segundo);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 40px 0 ;
+    }
+    .navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--quinto);
+    font-size: 3rem;
+    }
+    .navegacion__enlace--activo,
+    .navegacion__enlace:hover {
+    color: var(--primero);
+    }
+    /** Main **/
+.resumenbio{
+    display: flex;
+    align-items: center;
+}
+.resumenbio__img{
+    margin: 10px 10px 10px 0;
+    width: 170px;
+    height: 205px;
+}
+.resumeninv{
+    display: flex;
+    align-items: center;
+}
+.resumeninv__img{
+    margin: 10px 0 10px 10px;
+    width: 170px;
+    height: 205px;
+}
+.resumenleg{
+    display: flex;
+    align-items: center;
+}
+.resumenleg__img{
+    margin: 10px 10px 10px 0;
+    width: 170px;
+    height: 205px;
+}
+
+    /** Footer **/
+.footer {
+    background-color: var(--quinto);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    }
+    .footer__texto {
+    font-family: var(--fuentePrincipal);
+    color: var(--primero);
+    text-align: center;
+    font-size: 2.2rem;
+    }
+    /** Biografia **/
+    
+    .primerp{
+        margin: 10;
+        display: flex;
+        align-items: center;
+    }
+    .primerp__img{
+        margin: 10px 10px 10px 0;
+        width: 170px;
+        height: 205px;
+    }
+    .segundop{
+        display: flex;
+        align-items: center;
+    }
+    .segundop__img{
+        margin: 10px 0 10px 10px;
+        width: 180px;
+        height: 205px;
+    }
+    /**Inventos**/
+    .inventos__cont{
+        display: flex;
+    }
+    .inventos__titulos{
+        text-align: start;
+    }
+
+    .inventos__texto{
+       
+        margin: 20px;
+    }
+    .inventos__img{
+        height: 205px;
+        width: 170px;
+    }
+
+
+    /**Legado**/
+    .legado__cont{
+        display: flex;
+    }
+    .legado__img{
+        margin: 20px;
+    }
+
+    /**Contactos **/
+    .formulario{
+        margin-top: 20px;
+        font-family: var(--fuentePrincipal);
+        background-color: var(--quinto);
+        width: min( 600px, 100%);
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 10px;
+        }
+        .formulario fieldset{
+        border: none;
+        }
+        .formulario legend{
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primero);
+        }
+          
+            .campo:nth-child(3),
+            .campo:nth-child(4) {
+                grid-column: 1 / 3;
+            }
+        
+        .campo{
+            margin-bottom: 10px;
+        }
+        .campo label{
+            color: var(--primero);
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .campo textarea{
+            height: 200px;
+        }
+        .input{
+            width: 100%;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .boton{
+            background-color: var(--primero);
+            color: var(--quinto);
+            padding: 10px 30px;
+            margin-top: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            border-radius:5px;
+            width: 100%;
+            border: none;
+        }
+        .boton:hover{
+            background-color: var(--cuarto);
+            color: var(--primero);
+        }
